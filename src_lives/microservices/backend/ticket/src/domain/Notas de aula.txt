@@ -1,0 +1,3 @@
+Por que não colocar as entities direto na pasta domain?
+
+- Porque podem haver outros tipos de domain: eventos etc.
