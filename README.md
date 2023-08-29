@@ -21,7 +21,7 @@
 
 #### 🕒 Live 4
 
-#### 🚧 Live 5 - Pausada em 36m54s
+#### 🚧 Live 5 - Pausada em 01h09min51s
 
 <br>
 
