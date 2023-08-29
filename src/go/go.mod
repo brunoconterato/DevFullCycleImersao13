@@ -1,4 +1,4 @@
-module github.com/devfullcycle/imersao13/go
+module github.com/brunoconterato/DevFullCycleImersao13/go
 
 go 1.20
 

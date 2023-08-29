@@ -25,3 +25,7 @@ func NewOrder(id string, investor *Investor, asset *Asset, shares int, price flo
 		Transactions:  []*Transaction{},
 	}
 }
+
+func (order *Order) subtractPendingShares(shares int) {
+	order.PendingShares -= shares
+}

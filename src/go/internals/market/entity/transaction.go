@@ -27,3 +27,20 @@ func NewTransation(sellingOrder *Order, buyingOrder *Order, shares int, price fl
 		DateTime:     time.Now(),
 	}
 }
+
+func (transaction *Transaction) CalculateTotal(shares int, price float64) {
+	transaction.Total = float64(shares) * price
+}
+
+func (transaction *Transaction) AddShares(shares int) {
+	transaction.Shares += shares
+}
+
+func (transaction *Transaction) CheckClose() {
+	if transaction.BuyingOrder.Shares == 0 {
+		transaction.BuyingOrder.Status = "CLOSED"
+	}
+	if transaction.SellingOrder.Shares == 0 {
+		transaction.SellingOrder.Status = "CLOSED"
+	}
+}
