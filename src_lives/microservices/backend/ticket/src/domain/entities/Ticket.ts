@@ -12,6 +12,7 @@ export default class Ticket {
   // Porem diferente pq o factory do Go4 implica herança (método create herda da superclasse abstrata)
   static create(enventId: string, email: string) {
     const ticketId = crypto.randomUUID();
-    return new Ticket(ticketId, enventId, email, "reserved");
+    const initialStatus = "reserved"
+    return new Ticket(ticketId, enventId, email, initialStatus);
   }
 }
